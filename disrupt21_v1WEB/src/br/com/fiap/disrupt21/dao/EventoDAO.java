@@ -33,7 +33,7 @@ public class EventoDAO {
 	public List<Evento> listar(){
 		List<Evento> eventos = new ArrayList<Evento>();
 		SQLConnection connect = new SQLConnection();
-		String query = "SELECT id, titulo_evento, desc_evento, data FROM evento";
+		String query = "SELECT id, titulo_evento, desc_evento, data FROM eventos";
 		ResultSet rs = connect.executeQuery(query);
 		
 		try {

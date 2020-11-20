@@ -20,6 +20,11 @@ public class SQLConnection {
 			String SID = "ORCL";
 			String user = "rm85183";
 			String password = "260895";
+			try {
+				Class.forName("oracle.jdbc.OracleDriver");
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
 			conn = DriverManager.getConnection("jdbc:oracle:thin:@"+host+":"+port+":"+SID+"",user,password);
 		} catch (SQLException e) {
 			e.printStackTrace();

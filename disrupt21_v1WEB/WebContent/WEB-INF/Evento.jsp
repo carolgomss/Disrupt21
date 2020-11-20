@@ -1,20 +1,20 @@
-
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Back To The Future</title>
+<title>Back To The Future - Eventos</title>
 </head>
 <body>
 teste
 	<table>
-		<c:forEach items="${personagens}" var="personagem">
+		<c:forEach items="${eventos}" var="eventos">
 			<tr>
-				<td>${personagem.id}</td>
-				<td><c:out value="${personagem.nome}"/></td>
+				<td>${eventos.id}</td>
+				<td><c:out value="${personagem.titulo}"/></td>
 				<td><c:out value="${personagem.descricao}"/></td>
+				<td><c:out value="${personagem.data}"/></td>
 			</tr>
 		</c:forEach>		
 	</table>

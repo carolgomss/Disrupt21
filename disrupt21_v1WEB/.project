@@ -3,6 +3,7 @@
 	<name>disrupt21_v1WEB</name>
 	<comment></comment>
 	<projects>
+		<project>Servers</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
